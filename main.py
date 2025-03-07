@@ -2,12 +2,6 @@ from tkinter import *
 from tkinter.ttk import Combobox
 
 
-# def change(evt):
-#     x = cb.get() #считываuse_case = ["+","-",":", "*"]ние значения выбранного в списке
-#     for k in range(len(use_case)):
-#         if x == use_case[k]:
-#             lbl.configure(image=imgs[k])
-
 def clicked():
     global t
     global t_2
@@ -44,7 +38,7 @@ wnd.geometry("800x600")  # Установка расширения окна
 wnd.iconbitmap("icon_512.ico")
 wnd.title("Calculator")  # Окно с кнопкой
 # wnd.resizable(False, False)
-lbl = Label(wnd, text="Welcome to calculator", font=("Arial Bold", 20))  # Создание объекта метки
+lbl = Label(wnd, text="", font=("Arial Bold", 20))  # Создание объекта метки
 lbl.place(x=200, y=200)
 
 t = ""  # Переменная для записи ввода
@@ -96,16 +90,8 @@ btn_1.configure(command=clicked)
 
 btn_1.place(x=300, y=300)
 
-# Добавляем метку для результата (вместо постоянного создания новых Label)
-# result = Label(master=wnd, text=result)
-# result.place(x=440, y=250, width=25, height=25)
-
-
-
-
 result = Label(wnd, text="")
 result.place(x=440, y=250, width=25, height=25)
-
 
 
 def plus(x, y):
