@@ -30,7 +30,6 @@ def clicked():
         result.config(text="Ошибка ввода")  # Если введены не числа
 
 
-# if num_1 != "" and num_2 != "":
 
 wnd = Tk()  # Запуск окна
 wnd.title("Calculator")  # Название окна
