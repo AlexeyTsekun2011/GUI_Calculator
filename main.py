@@ -2,12 +2,6 @@ from tkinter import *
 from tkinter.ttk import Combobox
 
 
-# def change(evt):
-#     x = cb.get() #считываuse_case = ["+","-",":", "*"]ние значения выбранного в списке
-#     for k in range(len(use_case)):
-#         if x == use_case[k]:
-#             lbl.configure(image=imgs[k])
-
 def clicked():
     global t
     global t_2
@@ -36,7 +30,6 @@ def clicked():
         result.config(text="Ошибка ввода")  # Если введены не числа
 
 
-# if num_1 != "" and num_2 != "":
 
 wnd = Tk()  # Запуск окна
 wnd.title("Calculator")  # Название окна
@@ -96,16 +89,8 @@ btn_1.configure(command=clicked)
 
 btn_1.place(x=300, y=300)
 
-# Добавляем метку для результата (вместо постоянного создания новых Label)
-# result = Label(master=wnd, text=result)
-# result.place(x=440, y=250, width=25, height=25)
-
-
-
-
 result = Label(wnd, text="")
 result.place(x=440, y=250, width=25, height=25)
-
 
 
 def plus(x, y):
